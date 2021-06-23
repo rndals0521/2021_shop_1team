@@ -66,10 +66,7 @@ public class DAO {
 	// 카트 삽입
 	public static int addProduct(CVO cvo) {
 		int result =0;
-		System.out.println(123);
-		System.out.println(cvo.getP_name());
 		result = getSession().insert("insert_cart",cvo);
-		System.out.println(456);
 		ss.commit();
 		return result;
 	}
